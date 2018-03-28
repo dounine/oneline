@@ -4,7 +4,7 @@ import {create} from 'jss';
 import preset from 'jss-preset-default';
 import {SheetsRegistry} from 'react-jss';
 import {createMuiTheme} from 'material-ui/styles';
-import {purple, grey, green, red, blue} from 'material-ui/colors';
+import {purple,indigo, grey, green, red, blue} from 'material-ui/colors';
 import createGenerateClassName from 'material-ui/styles/createGenerateClassName';
 
 
@@ -12,7 +12,7 @@ const theme = createMuiTheme({
     palette: {
         common: {
             black: "#000",
-            white: "#fff",
+            white: "#ffffff",
             transparent: "rgba(0, 0, 0, 0)",
             fullBlack: "rgba(0, 0, 0, 1)",
             darkBlack: "rgba(0, 0, 0, 0.87)",
@@ -24,7 +24,7 @@ const theme = createMuiTheme({
             lightWhite: "rgba(255, 255, 255, 0.54)"
         },
         type: "light",
-        primary: blue, // Purple and green play nicely together.
+        primary: indigo, // Purple and green play nicely together.
         secondary: {
             ...green,
             A400: '#00e677',

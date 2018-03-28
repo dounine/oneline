@@ -43,10 +43,15 @@ class index extends React.Component {
         const { classes } = this.props;
         return (
             <div style={{
-                marginTop:-24,
-                boxSizing:'border-box'
+                marginTop:-18,
+                boxSizing:'border-box',
             }}>
-                <div style={{height:'100%',position:'fixed',width:200,backgroundColor:'#f2f2f2'}}>
+                <div style={{
+                    height:'100%',
+                    position:'fixed',
+                    width:200,
+                    backgroundColor:'#f2f2f2',
+                }}>
                     <List>
                         {this.state.menus.map(value => (
                             <ListItem onClick={this.handleToggle(value)} key={value.name} dense button className={classes.listItem+' '+(this.state.checked===value.name?classes.activeItem:'')}>
@@ -63,7 +68,9 @@ class index extends React.Component {
                     </List>
                 </div>
                 <div style={{
-                    marginLeft:201
+                    boxSizing:'border-box',
+                    marginLeft:210,
+                    marginRight:10,
                 }}>
                     <ProjectList />
                 </div>
